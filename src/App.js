@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './components/layout/Header'
 import Todos from './components/Todos'
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
+        <Header />
         <Todos todos={this.state.todos} toggleComplete={this.toggleComplete} deleteTodo={this.deleteTodo} />
       </div>
     );
